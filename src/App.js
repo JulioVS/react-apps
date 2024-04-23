@@ -1,7 +1,13 @@
-function App() {
+function App(props) {
+    const colorStyle = {
+      color:props.color,
+      fontSize:props.size
+    }
     return (
-      <div >
+      <div>
+        <div style={colorStyle}>
         Hello World!
+        </div>
       </div>
     );
   }
